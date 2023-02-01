@@ -55,7 +55,6 @@ strncmp PROC
 	REPE CMPSB
 	JZ Return
 	JS SecondLonger
-	JMP FirstLonger
 
 	FirstLonger:
 		INC DX
@@ -105,7 +104,6 @@ Start:
 	MOV AH, 02h
 	POP BX
 	CMP BX, 0
-	JE EqualZero
 	JG GreaterZero
 	JL LessZero
 
@@ -130,3 +128,4 @@ Start:
 	INT 21h
 CODE ENDS
 END Start
+ÓM4ÓM4ÓM4iý¸é­9y¶÷é¯<
